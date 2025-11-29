@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="SH Global Shopping — Fresh fruits, vegetables & packaged food. Delivery first, pay on delivery. www.shglobalsells.co.ke" />
+  <title>SH Global Shopping — Home</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <img src="images/logo.png" alt="Website Logo" id="site-logo">
+</head>
+<body id="page-home">
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo">SH</div>
+        <div class="brand-text">
+          <div class="site-title">SH Global Shopping</div>
+          <div class="site-tagline" data-i18n="tagline">Fresh produce & packaged foods — Delivery first, pay on delivery</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <input id="search" class="searchbox" placeholder="Search products (e.g. pineapple)" />
+        <button id="searchBtn" class="btn">Search</button>
+
+        <select id="lang" class="lang-switch" title="Language">
+          <option value="en">English</option>
+          <option value="zh">中文</option>
+        </select>
+
+        <a class="navlink" href="categories.html" id="nav-categories">Categories</a>
+        <a class="navlink" href="cart.html">Cart <span id="cart-count" class="badge">0</span></a>
+        <a class="navlink" href="orders.html">My Orders</a>
+        <a class="navlink admin-link" href="admin.html">Admin</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap main">
+    <section class="hero">
+      <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=1" alt="Fresh produce banner" class="banner-img">
+      <div class="hero-text">
+        <h1 data-i18n="hero_h1">Fresh fruits & vegetables — delivered to your door</h1>
+        <p data-i18n="hero_p">We offer all varieties of fruits, vegetables and packaged foods. Place your order, enter delivery details and pay on delivery.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="categories.html" data-i18n="shopnow">Shop Now</a>
+          <a class="btn" href="categories.html#Fruits" data-i18n="fruits">Fruits</a>
+          <a class="btn" href="categories.html#Vegetables" data-i18n="vegetables">Vegetables</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 data-i18n="popular">Popular items</h2>
+      <div id="product-list" class="product-grid"></div>
+    </section>
+
+    <section class="section">
+      <h2 data-i18n="howitworks">How it works</h2>
+      <ol class="how">
+        <li data-i18n="select">Select products & add to cart</li>
+        <li data-i18n="deliver">Enter delivery details at checkout</li>
+        <li data-i18n="pay">Pay on delivery (Cash on Delivery)</li>
+      </ol>
+    </section>
+
+    <footer class="site-footer">
+      <div>© <span id="year"></span> SH Global Shopping — www.shglobalsells.co.ke</div>
+      <div>Contact: 0700 000 000 | support@shglobalsells.co.ke</div>
+    </footer>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Cart — SH Global Shopping</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body id="page-cart">
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo">SH</div>
+        <div class="brand-text">
+          <div class="site-title">SH Global Shopping</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <input id="search" class="searchbox" placeholder="Search products..." />
+        <button id="searchBtn" class="btn">Search</button>
+        <select id="lang" class="lang-switch">
+          <option value="en">English</option>
+          <option value="zh">中文</option>
+        </select>
+        <a class="navlink" href="index.html">Home</a>
+        <a class="navlink" href="categories.html">Categories</a>
+        <a class="navlink" href="orders.html">My Orders</a>
+        <a class="navlink admin-link" href="admin.html">Admin</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap main">
+    <section class="section">
+      <h1 data-i18n="cart">Your Cart</h1>
+      <div id="cart-items" class="cart-items"></div>
+
+      <div class="checkout-card">
+        <div class="total-line">Total: KES <span id="cart-total">0</span></div>
+        <button id="goto-checkout" class="btn btn-primary" data-i18n="checkout">Proceed to Checkout</button>
+        <button id="clear-cart" class="btn" data-i18n="clear">Clear Cart</button>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div>© <span id="year"></span> SH Global Shopping — www.shglobalsells.co.ke</div>
+    </footer>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>

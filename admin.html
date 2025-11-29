@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin — SH Global Shopping</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body id="page-admin">
+  <header class="site-header">
+    <div class="wrap">
+      <div class="brand">
+        <div class="logo">SH</div>
+        <div class="brand-text"><div class="site-title">SH Global Shopping — Admin</div></div>
+      </div>
+
+      <div class="controls">
+        <a class="navlink" href="index.html">Home</a>
+        <a class="navlink" href="categories.html">Categories</a>
+        <a class="navlink" href="cart.html">Cart</a>
+        <a class="navlink" href="orders.html">My Orders</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap main">
+    <section class="section">
+      <h1>Admin Panel — Add / Manage Products</h1>
+      <div class="admin-note">admin password: <strong>admin123
+      </strong></div>
+
+      <form id="admin-form" class="admin-form">
+        <input id="p-title" placeholder="Title (EN)" required />
+        <input id="p-title-zh" placeholder="Title (中文)" />
+        <input id="p-price" type="number" placeholder="Price (KES)" required />
+        <input id="p-img" placeholder="Image URL (Unsplash recommended)" />
+        <input id="p-sku" placeholder="SKU" />
+        <select id="p-cat"><option>Fruits</option><option>Vegetables</option><option>Packaged Food</option></select>
+        <textarea id="p-desc" placeholder="Short description (EN)"></textarea>
+        <textarea id="p-desc-zh" placeholder="描述 (中文)"></textarea>
+        <input id="admin-pass" placeholder="Admin password" required />
+        <button type="submit" class="btn btn-primary">Add Product</button>
+      </form>
+
+      <h3>Products</h3>
+      <div id="admin-products"></div>
+
+      <h3>Banner</h3>
+      <input id="banner-url" placeholder="Banner image URL" />
+      <button id="save-banner" class="btn">Save Banner</button>
+    </section>
+
+    <footer class="site-footer">
+      <div>© <span id="year"></span> SH Global Shopping — www.shglobalsells.co.ke</div>
+    </footer>
+  </main>
+
+  <script src="assets/app.js"></script>
+</body>
+</html>
